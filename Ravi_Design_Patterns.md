@@ -173,4 +173,3 @@ return "You have successfully booked a advanced viewing of " + model + " ( " + i
  - https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns
  - https://codesource.io/javascript-design-patterns/
  - https://www.digitalocean.com/community/tutorial_series/javascript-design-patterns
-#Design_Pattern
