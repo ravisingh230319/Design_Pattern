@@ -115,6 +115,7 @@ var officePrinter = printer.getInstance();
 **4. Observer Design Pattern**
 
 This comes under Behavioral Design Patterns. This design pattern used in a place where objects communicate with other sets of objects simultaneously. There is no unnecessary pull and push of events across the states, rather the sections involved only update the current state of data in this observer design pattern.
+
 function Observer() {
 this.observerContainer = [];
 }
@@ -137,6 +138,7 @@ this.observerContainer.splice(itemIndex, 1);
 * we notify items added to the container by calling
 * each subscribed components added to our container
 */
+
 Observer.prototype.notifyAll = function (item) {
 this.observerContainer.forEach(function (observerItem) {
 observerItem(item);
@@ -147,6 +149,7 @@ observerItem(item);
 
 The command design pattern contains method invocation, operations, or requests into a single object. This design pattern provides us a chance to write commands from anything executing commands and assign responsibility to different objects. These commands are represented by run() and execute() format.
 For example:-
+
 (function(){
 
 var carManager = {
@@ -165,7 +168,9 @@ return "You have successfully purchased Item " + id + ", a " + model;
 arrangeViewing: function( model, id ){
 return "You have successfully booked a advanced viewing of " + model + " ( " + id + " ) ";
 }
+
 };
+
 })();
 
 **Reference Links:**
